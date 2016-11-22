@@ -1,6 +1,7 @@
 function Person(attr){
-  this.weight = 90;
-  this.height = 186;
+  this.weight = weight;
+  this.height = height;
+  // this.toggle = toggle;
 
   Person.prototype.calculate_bmi = function () {
     calculator = new BMICalculator();
