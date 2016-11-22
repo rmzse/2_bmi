@@ -8,8 +8,8 @@ describe ("BMICalculator", function(){
       person = new Person({weight: 90, height: 186});
       calculate = new BMICalculator();
     });
-    
-    it("returns the BMI value for a person", function(){
+
+    it("and returns the metric BMI value", function(){
       calculate.bmi(person);
       expect(person.bmiValue).toEqual(26.01);
     });

@@ -25,14 +25,14 @@ describe ("Person", function() {
     });
   });
 
-  // describe("calculate BMI with imperial units", function(){
-  //   beforeEach(function () {
-  //     person = new Person({weight: 200, height: 66, toggle: true});
-  //   });
-  //
-  //   it("has a weight of 90", function() {
-  //     expect(person.weight).toEqual(200);
-  //   });
+  describe("calculate BMI with imperial units", function(){
+    beforeEach(function () {
+      person = new Person({weight: 200, height: 66, toggle: true});
+    });
+
+    it("has a weight of 90", function() {
+      expect(person.weight).toEqual(200);
+    });
   //
   //   it("has a height of 186", function() {
   //     expect(person.height).toEqual(66);
@@ -47,5 +47,5 @@ describe ("Person", function() {
   //     person.calculate_bmi();
   //     expect(person.bmiMessage).toEqual("Obese");
   //   });
-  // });
+  });
 });
