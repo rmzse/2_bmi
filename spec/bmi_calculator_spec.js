@@ -7,12 +7,13 @@ describe ("BMICalculator", function(){
     beforeEach(function(){
       person = new Person({weight: 90, height: 186});
       calculate = new BMICalculator();
-
-      it("returns the BMI value for a person", function(){
-        calculate.bmi(person);
-        expect(person.bmiValue).toEqual(26.01);
-      });
     });
+    
+    it("returns the BMI value for a person", function(){
+      calculate.bmi(person);
+      expect(person.bmiValue).toEqual(26.01);
+    });
+
   });
 
 
