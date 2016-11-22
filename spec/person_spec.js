@@ -14,12 +14,12 @@ describe ("Person", function() {
       expect(person.height).toEqual(186);
     });
 
-    it("should calculate a BMI value", function (){
+    it("should calculate a metric BMI value", function (){
       person.calculate_bmi();
       expect(person.bmiValue).toEqual(26.01);
     });
 
-    it("should have a BMI message", function(){
+    it("should have a metric BMI message", function(){
       person.calculate_bmi();
       expect(person.bmiMessage).toEqual("Overweight");
     });
@@ -38,12 +38,12 @@ describe ("Person", function() {
       expect(person.height).toEqual(66);
     });
 
-    it("should calculate a BMI value", function (){
+    it("should calculate an imperial BMI value", function (){
       person.calculate_bmi();
       expect(person.bmiValue).toEqual(32.28);
     });
 
-    it("should have a BMI message", function(){
+    it("should have an imperial BMI message", function(){
       person.calculate_bmi();
       expect(person.bmiMessage).toEqual("Obese");
     });
