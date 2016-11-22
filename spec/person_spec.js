@@ -9,4 +9,8 @@ describe ("Person", function() {
     expect(person.weight).toEqual(90);
   });
 
+  it("has a height of 186", function() {
+    expect(person.height).toEqual(186);
+  });
+
 });
