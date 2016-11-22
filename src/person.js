@@ -1,10 +1,10 @@
 function Person(attr){
-  this.weight = weight;
-  this.height = height;
-  // this.toggle = toggle;
+  this.weight = attr.weight;
+  this.height = attr.height;
+  // this.toggle = attr.toggle;
 
   Person.prototype.calculate_bmi = function () {
-    calculator = new BMICalculator();
-    calculator.bmi(this);
+    calculate = new BMICalculator();
+    calculate.bmi(this);
   };
 }
