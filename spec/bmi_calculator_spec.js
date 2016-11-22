@@ -5,7 +5,7 @@ describe ("BMICalculator", function(){
   describe("calculates the BMI of a person with metric units", function(){
 
     beforeEach(function(){
-      person = new Person({weight: 90, height: 186});
+      person = new Person({weight: 90, height: 186, toggle: 'false'});
       calculate = new BMICalculator();
     });
 

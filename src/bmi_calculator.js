@@ -11,7 +11,7 @@ BMICalculator.prototype.bmi = function(obj){
   var multiplier = 1;
   // debugger;
   if ( weight > 0 && height > 0 ) {
-    if (toggle === true) {
+    if (toggle === 'true') {
       divisor = 1;
       multiplier = 703;
     }
