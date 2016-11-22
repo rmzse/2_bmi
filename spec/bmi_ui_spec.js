@@ -18,8 +18,27 @@ describe("BMI_UI - index.html", function() {
       });
     });
 
-    describe("displays response messages", function() {
+    describe("displays response messages for metric calculations", function() {
       beforeEach(function(){
+        $("input[type='radio']").get(0).checked = 'true';
+        $('#weight').val('90');
+        $('#height').val('186');
+        $('#calculate').click();
+      });
+
+      it("with a bmi value", function (){
+        expect($('#display_value').text()).toEqual('Your BMI is 26.01');
+      });
+
+      it("and a bmi message", function() {
+        expect($('#display_message').text()).toEqual('and you are Overweight');
+      });
+
+    });
+
+    describe("displays response messages for imperial calculations", function() {
+      beforeEach(function(){
+        $("input[type='radio']").get(1).checked = 'true';
         $('#weight').val('90');
         $('#height').val('186');
         $('#calculate').click();
