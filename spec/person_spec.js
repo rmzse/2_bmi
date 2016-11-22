@@ -3,7 +3,7 @@ describe ("Person", function() {
 
   describe("calculate BMI with metric units", function(){
     beforeEach(function () {
-      person = new Person({weight: 90, height: 186});
+      person = new Person({weight: 90, height: 186, toggle: 'false'});
     });
 
     it("has a weight of 90", function() {
@@ -27,7 +27,7 @@ describe ("Person", function() {
 
   describe("calculate BMI with imperial units", function(){
     beforeEach(function () {
-      person = new Person({weight: 200, height: 66, toggle: true});
+      person = new Person({weight: 200, height: 66, toggle: 'true'});
     });
 
     it("has a weight of 200", function() {
