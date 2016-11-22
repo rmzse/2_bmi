@@ -2,15 +2,19 @@ describe ("BMICalculator", function(){
   var calculator;
   var person;
 
-  beforeEach(function(){
-    person = new Person({weight: 90, height: 186});
-    calculate = new BMICalculator();
+  describe("calculates the BMI of a person with metric units", function(){
+
+    beforeEach(function(){
+      person = new Person({weight: 90, height: 186});
+      calculate = new BMICalculator();
+
+      it("returns the BMI value for a person", function(){
+        calculate.bmi(person);
+        expect(person.bmiValue).toEqual(26.01);
+      });
+    });
   });
 
-  it("calculates BMI for a person using metric units", function(){
-    calculate.bmi(person);
-    expect(person.bmiValue).toEqual(26.01);
-  });
 
   // describe("calculates value with imperial units and", function(){
   //   beforeEach(function(){
