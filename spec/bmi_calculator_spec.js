@@ -17,7 +17,7 @@ describe ("BMICalculator", function(){
   });
 
 
-  describe("calculates value with imperial units", function(){
+  describe("calculates the BMI of a person with imperial units", function(){
     beforeEach(function(){
       person = new Person({weight: 200, height: 66, toggle: 'true'});
       calculate = new BMICalculator();
