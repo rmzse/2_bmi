@@ -6,6 +6,10 @@
     <script src="src/person.js"></script>
     <script src="src/bmi_calculator.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="src/bmi_ui.js"></script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; URL=http://www.smartbmicalculator.com/"/>
+    </noscript>
   </head>
   <body>
     <form>
@@ -16,25 +20,6 @@
     <div>
       <span id="display_value"></span>
       <span id="display_message"></span>
-
-      <script type="text/javascript">
-        $(document).ready(function () {
-          $('#calculate').click(function () {
-            var w = parseFloat($('#weight').val());
-            var h = parseFloat($('#height').val());
-            var person = new Person({weight: w, height: h});
-            person.calculate_bmi();
-            $('#display_value').html('Your BMI is ' + person.bmiValue);
-            $('#display_message').html('and you are '+ person.bmiMessage);
-          });
-        });
-      </script>
-
     </div>
-
-    <noscript>
-    <meta http-equiv="refresh" content="0; URL=http://www.smartbmicalculator.com/"/>
-</noscript>
-
   </body>
 </html>
