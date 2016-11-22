@@ -30,22 +30,22 @@ describe ("Person", function() {
       person = new Person({weight: 200, height: 66, toggle: true});
     });
 
-    it("has a weight of 90", function() {
+    it("has a weight of 200", function() {
       expect(person.weight).toEqual(200);
     });
-  //
-  //   it("has a height of 186", function() {
-  //     expect(person.height).toEqual(66);
-  //   });
-  //
-  //   it("should calculate a BMI value", function (){
-  //     person.calculate_bmi();
-  //     expect(person.bmiValue).toEqual(32.28);
-  //   });
-  //
-  //   it("should have a BMI message", function(){
-  //     person.calculate_bmi();
-  //     expect(person.bmiMessage).toEqual("Obese");
-  //   });
+
+    it("has a height of 186", function() {
+      expect(person.height).toEqual(66);
+    });
+
+    it("should calculate a BMI value", function (){
+      person.calculate_bmi();
+      expect(person.bmiValue).toEqual(32.28);
+    });
+
+    it("should have a BMI message", function(){
+      person.calculate_bmi();
+      expect(person.bmiMessage).toEqual("Obese");
+    });
   });
 });
