@@ -5,8 +5,15 @@ function BMICalculator(){
 BMICalculator.prototype.bmi = function(obj){
   var weight = obj.weight;
   var height = obj.height;
+  // var toggle = obj.toggle;
+  var divisor = 100;
+  var multiplier = 1;
   if ( weight > 0 && height > 0 ) {
-    var finalBmi = weight / Math.pow((height/100),2);
+    // if (toggle === true) {
+    //   divisor = 1;
+    //   multiplier = 403;
+    // }
+    var finalBmi = weight * multiplier / Math.pow((height / divisor),2);
     obj.bmiValue =  parseFloat(finalBmi.toFixed(2));
     setBMIMessage(obj);
     console.log(obj.bmiMessage);

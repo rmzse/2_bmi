@@ -22,11 +22,11 @@ describe("BMI_UI - index.html", function() {
         $('#calculate').click();
       });
 
-      it("about about bmi value", function (){
+      it("with a bmi value", function (){
         expect($('#display_value').text()).toEqual('Your BMI is 26.01');
       });
 
-      it("and bmi message", function() {
+      it("and a bmi message", function() {
         expect($('#display_message').text()).toEqual('and you are Overweight');
       });
 
