@@ -15,5 +15,21 @@ describe("BMI_UI - index.html", function() {
       expect($("#height").val()).toEqual("186");
     });
 
-    
+    describe("displays response messages", function() {
+      beforeEach(function(){
+        $('#weight').val('90');
+        $('#height').val('186');
+        $('#calculate').click();
+      });
+
+      it("about about bmi value", function (){
+        expect($('#display_value').text()).toEqual('Your BMI is 26.01');
+      });
+
+      it("and bmi message", function() {
+        expect($('#display_message').text()).toEqual('and you are Overweight');
+      });
+
+    });
+
 });
