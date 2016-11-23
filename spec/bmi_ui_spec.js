@@ -39,17 +39,17 @@ describe("BMI_UI - index.html", function() {
     describe("displays response messages for imperial calculations", function() {
       beforeEach(function(){
         $(':radio')[1].click();
-        $('#weight').val('90');
-        $('#height').val('186');
+        $('#weight').val('200');
+        $('#height').val('66');
         $('#calculate').click();
       });
 
       it("with a bmi value", function (){
-        expect($('#display_value').text()).toEqual('Your BMI is 26.01');
+        expect($('#display_value').text()).toEqual('Your BMI is 32.28');
       });
 
       it("and a bmi message", function() {
-        expect($('#display_message').text()).toEqual('and you are Overweight');
+        expect($('#display_message').text()).toEqual('and you are Obese');
       });
 
     });
