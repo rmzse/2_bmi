@@ -17,10 +17,31 @@
       <input type="radio" name="toggle" value="false" id="metricradio">
       <input type="radio" name="toggle" value="true" id="imperialradio">
       Imperial<br />
-      <input type="text" id="weight" placeholder="Weight in kg">
-      <input type="text" id="height" placeholder="Height in cm" class="metric">
-      <input type="number" name="feet" min="0" max="9" class="imperial"><span class="imperial">ft</span>
-      <input type="number" name="in" min="0" max="9" class="imperial"><span class="imperial">in</span>
+
+      <div style="display: block" class="metric">
+        <div  style="display:inline-block;">
+          <label>Weight in kg</label><br />
+          <input type="number" id="mweight" name="weight" placeholder="Weight in kg">
+        </div>
+        <div  style="display:inline-block;">
+          <label>Height in cm</label><br />
+          <input type="number" id="height" placeholder="Height in cm">
+        </div>
+      </div>
+
+      <div style="display: block" class="metric">
+        <div  style="display:inline-block;">
+          <label>Weight in lb</label><br />
+          <input type="number" id="weight" name="weight" placeholder="Weight in kg">
+        </div>
+        <div  style="display:inline-block;">
+          <label>Height</label><br />
+          <input type="number" id="ft" min="0" max="9">ft
+          <input type="number" id="in" min="0" max="9">in
+        </div>
+      </div>
+
+
       <input type="button" id="calculate" value="Calculate">
     </form>
     <div>
