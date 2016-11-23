@@ -1,3 +1,9 @@
 .large-6 {
   display: inline-block;
   padding-top: 20px; }
+
+.columns {
+  background-color: black;
+  color: white;
+  border: 3px solid red;
+}
