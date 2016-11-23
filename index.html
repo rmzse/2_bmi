@@ -14,26 +14,13 @@
     </noscript>
     <form>
       Metric
-      <input type="radio" name="toggle" value="false" id="metricradio" checked="checked">
+      <input type="radio" name="toggle" value="false" id="metricradio">
       <input type="radio" name="toggle" value="true" id="imperialradio">
       Imperial<br />
-      <div style="display:inline-block;" class="metric">
-        <label>Weight</label><br />
-        <input type="text" id="mweight" name="weight" placeholder="Weight in kg">
-      </div>
-      <div style="display:inline-block;" class="imperial">
-        <label>Weight</label><br />
-        <input type="text" id="iweight" name="weight" placeholder="Weight in lb">
-      </div>
-      <div style="display:inline-block;" class="metric">
-        <label>Height</label><br />
-        <input type="text" id="height" placeholder="Height in cm" class="metric">
-      </div>
-      <div style="display:inline-block;" class="imperial">
-        <label>Height</label><br />
-        <input type="number" name="feet" min="0" max="9">ft
-        <input type="number" name="in" min="0" max="9">in
-      </div>
+      <input type="text" id="weight" placeholder="Weight in kg">
+      <input type="text" id="height" placeholder="Height in cm" class="metric">
+      <input type="number" name="feet" min="0" max="9" class="imperial"><span class="imperial">ft</span>
+      <input type="number" name="in" min="0" max="9" class="imperial"><span class="imperial">in</span>
       <input type="button" id="calculate" value="Calculate">
     </form>
     <div>
