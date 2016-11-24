@@ -7,3 +7,18 @@
   color: white;
   border: 3px solid red;
 }
+
+/* Chrome 10+,Safari */
+background : -webkit-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
+
+/* Firefox 4+ */
+background : -moz-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
+
+/* Opera */
+background : -o-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
+
+/* IE 10+ */
+background : -ms-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
+
+/* W3C */
+background : -linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
