@@ -16,32 +16,40 @@
     <noscript>
       <meta http-equiv="refresh" content="0; URL=http://www.smartbmicalculator.com/"/>
     </noscript>
-    <form>
-      Metric
-      <input type="radio" name="toggle" value="false" id="metricradio" checked="checked">
-      <input type="radio" name="toggle" value="true" id="imperialradio">
-      Imperial<br />
 
-      <div style="display: inline-block" class="metric">
-        <div  style="display:inline-block;">
+
+    <form>
+      <div>
+        Metric
+        <input type="radio" name="toggle" value="false" id="metricradio" checked="checked">
+        <input type="radio" name="toggle" value="true" id="imperialradio">
+        Imperial<br />
+      </div>
+
+      <div  style="display:inline;">
+        <div style="display:inline-block;">
           <label>Weight</label><br />
           <input type="number" id="mweight" name="weight" placeholder="Weight in kg">
         </div>
-        <div  style="display:inline-block;">
+        <div style="display:inline-block;">
           <label>Height</label><br />
           <input type="number" id="height" placeholder="Height in cm">
         </div>
       </div>
 
-      <div style="display: inline-block" class="imperial">
+      <div style="display:inline;" class="imperial">
         <div  style="display:inline-block;">
           <label>Weight</label><br />
           <input type="number" id="iweight" name="weight" placeholder="Weight in lb">
         </div>
-        <div  style="display:inline-block;">
+        <div style="display:inline-block;">
           <label>Height</label><br />
-          <input type="number" id="ft" min="0" max="9" placeholder="ft">ft
-          <input type="number" id="in" min="0" max="9" placeholder="in">in
+          <div style="display:inline-block;">
+              <input type="number" id="ft" min="0" max="9" placeholder="ft">
+          </div>
+          <div style="display:inline-block;">
+            <input type="number" id="in" min="0" max="9" placeholder="in">
+          </div>
         </div>
       </div>
 
