@@ -1,15 +1,6 @@
-.columns {
-  background-color: black;
-  color: white;
-  border: 3px solid red;
-}
-
-.button {
-  margin: 1px 0px 3px 10px;
-}
-
-/* Chrome 10+,Safari */
-background : -webkit-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
+.mass {
+ Chrome 10+,Safari */
+/*background : -webkit-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
 
 /* Firefox 4+ */
 background : -moz-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
@@ -22,3 +13,21 @@ background : -ms-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220
 
 /* W3C */
 background : -linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
+}
+
+.wrapper {
+  margin-top:20px;
+  background-color: #DEF0FC;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+
+.columns {
+  background-color: #DEF0FC;
+  /*color: white;*/
+  /*border: 3px solid red;*/
+}
+
+.button {
+  margin: 1px 0px 3px 7px;
+}
