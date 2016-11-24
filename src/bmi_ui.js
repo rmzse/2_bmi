@@ -7,7 +7,7 @@ $(document).ready(function () {
     var t = $('input[name=toggle]:checked').val();
     if ( t == 'true') {
       w = parseInt($('#iweight').val());
-      h = parseInt($('#ft').val()) * 12 + parseInt($('#in').val());
+      h = parseInt($('#ft').val()) * 12 + parseInt($('#in').val()); 
     }
     var person = new Person({weight: w, height: h, toggle: t});
     person.calculate_bmi();
