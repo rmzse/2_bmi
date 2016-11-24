@@ -20,7 +20,7 @@ describe("BMI_UI - index.html", function() {
 
     describe("displays response messages for metric calculations", function() {
       beforeEach(function(){
-        $(':radio')[0].click();
+        $('#metricradio').click();
         $('#mweight').val('90');
         $('#height').val('186');
         $('#calculate').click();
@@ -38,7 +38,7 @@ describe("BMI_UI - index.html", function() {
 
     describe("displays response messages for imperial calculations", function() {
       beforeEach(function(){
-        $(':radio')[1].click();
+        $('#imperialradio').click();
         $('#iweight').val('200');
         $('#ft').val('5');
         $('#in').val('6');
