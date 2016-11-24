@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   $('#calculate').click(function () {
     // var w = $('#weight').val();
-    w = $('input[name=weight]').val();
+
     h = $('#height').val();
     t = $('input[name=toggle]:checked').val();
     var person = new Person({weight: w, height: h, toggle: t});
