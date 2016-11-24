@@ -4,6 +4,10 @@
   border: 3px solid red;
 }
 
+.button {
+  margin: 1px 0px 3px 10px;
+}
+
 /* Chrome 10+,Safari */
 background : -webkit-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
 
