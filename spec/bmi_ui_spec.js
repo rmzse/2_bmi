@@ -8,8 +8,8 @@ describe("BMI_UI - index.html", function() {
     describe("checks the field input values", function() {
 
       it("accepts an input of weight of 90", function() {
-        $("#weight").val(90);
-        expect($("#weight").val()).toEqual("90");
+        $("#mweight").val(90);
+        expect($("#mweight").val()).toEqual("90");
       });
 
       it("accepts an input of height of 186", function() {
@@ -21,7 +21,7 @@ describe("BMI_UI - index.html", function() {
     describe("displays response messages for metric calculations", function() {
       beforeEach(function(){
         $(':radio')[0].click();
-        $('#weight').val('90');
+        $('#mweight').val('90');
         $('#height').val('186');
         $('#calculate').click();
       });
@@ -39,8 +39,9 @@ describe("BMI_UI - index.html", function() {
     describe("displays response messages for imperial calculations", function() {
       beforeEach(function(){
         $(':radio')[1].click();
-        $('#weight').val('200');
-        $('#height').val('66');
+        $('#iweight').val('200');
+        $('#ft').val('5');
+        $('#in').val('6');
         $('#calculate').click();
       });
 
