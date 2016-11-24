@@ -1,8 +1,13 @@
 $(document).ready(function () {
+  var w;
+  var h;
+  var t;
+
   $('#calculate').click(function () {
-    var w = $('#weight').val();
-    var h = $('#height').val();
-    var t = $('input[name=toggle]:checked').val();
+    // var w = $('#weight').val();
+    w = $('input[name=weight]').val();
+    h = $('#height').val();
+    t = $('input[name=toggle]:checked').val();
     var person = new Person({weight: w, height: h, toggle: t});
     person.calculate_bmi();
     $('#display_value').html('Your BMI is ' + person.bmiValue);
