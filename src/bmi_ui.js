@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  $(".imperial").hide();
+
+  $('#metricradio').click(function(){
+    $(".imperial").hide();
+    $(".metric").show();
+  });
+
+  $('#imperialradio').click(function(){
+    $(".metric").hide();
+    $(".imperial").show();
+  });
+
   $('#calculate').click(function () {
     var w = parseInt($('#mweight').val());
     var h = parseInt($('#height').val());
