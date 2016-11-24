@@ -1,6 +1,6 @@
-.mass {
- Chrome 10+,Safari */
-/*background : -webkit-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
+body {
+/* Chrome 10+,Safari */
+background : -webkit-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
 
 /* Firefox 4+ */
 background : -moz-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
@@ -19,6 +19,7 @@ background : -linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 2
   margin-top:20px;
   background-color: #DEF0FC;
   border: 1px solid #bbb;
+  border: 2px solid #36f;
   border-radius: 3px;
 }
 
@@ -30,4 +31,8 @@ background : -linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 2
 
 .button {
   margin: 1px 0px 3px 7px;
+}
+
+h3 {
+  margin-top: 20px;
 }
