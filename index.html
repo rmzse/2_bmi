@@ -26,7 +26,7 @@
         Imperial<!-- <br /> -->
       </div>
 
-      <div  style="display:inline;" class="metric">
+      <!-- <div  style="display:inline;" class="metric">
         <div style="display:inline-block;">
           Weight<br />
           <input type="number" id="mweight" name="weight" placeholder="Weight in kg">
@@ -51,7 +51,7 @@
             <input type="number" id="in" min="0" max="9" placeholder="in">
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- <input type="button" id="calculate" value="Calculate">
     </form> -->
@@ -72,7 +72,36 @@
           </div>
             <div class="row">
               <div class="large-9 medium-9 small-9 columns">
-                calc inputs
+
+
+                  <div  style="display:inline;" class="metric">
+                    <div style="display:inline-block;">
+                      Weight<br />
+                      <input type="number" id="mweight" name="weight" placeholder="Weight in kg">
+                    </div>
+                    <div style="display:inline-block;">
+                      Height<br />
+                      <input type="number" id="height" placeholder="Height in cm">
+                    </div>
+                  </div>
+
+                  <div style="display:inline;" class="imperial">
+                    <div  style="display:inline-block;">
+                      Weight<br />
+                      <input type="number" id="iweight" name="weight" placeholder="Weight in lb">
+                    </div>
+                    <div style="display:inline-block;">
+                      Height<br />
+                      <div style="display:inline-block;">
+                          <input type="number" id="ft" min="0" max="9" placeholder="ft">
+                      </div>
+                      <div style="display:inline-block;">
+                        <input type="number" id="in" min="0" max="9" placeholder="in">
+                      </div>
+                    </div>
+                  </div>
+
+
               </div>
               <div class="large-3 medium-3 small-3 end columns">
                   <input type="button" id="calculate" value="Calculate">
