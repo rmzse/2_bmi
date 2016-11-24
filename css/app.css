@@ -36,3 +36,11 @@ background : -linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 2
 h3 {
   margin-top: 20px;
 }
+
+#display_value,
+#display_message {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-style: normal;
+  text-decoration: underline;
+}
