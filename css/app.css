@@ -27,6 +27,8 @@ background : -linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 2
   border-radius: 15px 15px;
 }
 
+
+
 .columns {
   background-color: #DEF0FC;
   /*color: white;*/
@@ -54,3 +56,32 @@ h3 {
   margin-top: 8px;
   margin-bottom: 30px;
 }
+
+
+/******** Demo *******/
+
+.columns {
+  border: solid 3px red;
+  background-color: #000;
+}
+
+/*show the all dark layout*/
+.end {
+  border: solid 3px red;
+  background-color: #000;
+}
+
+
+.row {
+  border: solid 5px green;
+  background-color: #000;
+}
+
+
+
+/*make all rows rounded*/
+/*.row {
+  border-radius: 15px 15px;
+}*/
+
+/******** Demo end *******/
