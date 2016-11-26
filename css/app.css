@@ -15,12 +15,16 @@ background : -ms-linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220
 background : -linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 235) 92%);
 }
 
+.insidewrapper {
+  border-radius: 15px 15px;
+}
+
 .wrapper {
   margin-top:80px;
   background-color: #DEF0FC;
   border: 1px solid #bbb;
   border: 2px solid #36f;
-  border-radius: 3px;
+  border-radius: 15px 15px;
 }
 
 .columns {
@@ -31,6 +35,7 @@ background : -linear-gradient(bottom right, rgb(212, 4, 212) 08%, rgb(14, 220, 2
 
 .button {
   margin: 1px 0px 3px 7px;
+  border-radius: 3px;
 }
 
 h3 {
