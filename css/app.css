@@ -60,28 +60,32 @@ h3 {
 
 /******** Demo *******/
 
-.columns {
+/*.columns {
   border: solid 3px red;
   background-color: #000;
-}
+}*/
 
 /*show the all dark layout*/
-.end {
+/*.end {
   border: solid 3px red;
   background-color: #000;
-}
+}*/
 
 
-.row {
+/*.row {
   border: solid 5px green;
   background-color: #000;
-}
+}*/
 
 
 
 /*make all rows rounded*/
-/*.row {
+.row {
   border-radius: 15px 15px;
+}
+
+/*div {
+  border: solid 3px yellow;
 }*/
 
 /******** Demo end *******/
